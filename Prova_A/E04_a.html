@@ -8,11 +8,15 @@
     */
 
     //ENTRADA
-
+    const viagem = prompt('Informe quantos quilômetros foram percorridos nesta viagem').replace(",", ".")
 
     //PROCESSAMENTO
-
+    const litrosgasolina = Number(viagem / 14)
+    const preçogasolina = Number(litrosgasolina) * 5.19
+    const pedagio = Number(viagem / 50) * 4.90
+    const resultado = Number(preçogasolina) + Number(pedagio)
 
     //SAÍDA
+    document.write(`Serão necessários ${litrosgasolina.toFixed(1)} litros de gasolina, o custo total da gasolina foi de R$ ${preçogasolina.toFixed(2)} e o custo total da viagem foi de R$ ${resultado.toFixed(2)}.`)
 
 </script>

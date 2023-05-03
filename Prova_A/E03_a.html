@@ -6,11 +6,13 @@
     */
 
     //ENTRADA
-
-
+     const nota = prompt('Informe a nota que obteve na atividade 1').replace(",", ".")
+     const nota2 = prompt('Informe a nota que obteve na atividade 2').replace(",", ".")
+     const nota3 = prompt('Informe a nota que obteve na atividade 3').replace(",", ".")
     //PROCESSAMENTO
-
+    const conta = Number(nota) + Number(nota2) + Number(nota3)
+    const resultado = Number(conta/3)
 
     //SAÍDA
-
+    document.write(`A média obtida pelo aluno foi de ${resultado.toFixed(1)} pontos.`)
 </script>

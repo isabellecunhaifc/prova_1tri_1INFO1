@@ -8,11 +8,13 @@
     */
 
     //ENTRADA
-
+    const litros = prompt('Quantos quilômetros a motocicleta percorre com cada litro de combustível?').replace(",", ".")
+    const km = prompt('Qual a quilometragem percorrida?').replace(",", ".")
 
     //PROCESSAMENTO
-
+    const totallitros = Number(km/litros)
+    const revisão = Number(km/2000) * 200.00
 
     //SAÍDA
-
+    document.write(`A quantidade de litros de combustível consumida foi de ${totallitros.toFixed(1)} litros e o custo total em revisão da motocicleta foi de R$ ${revisão.toFixed(2)}`)
 </script>
